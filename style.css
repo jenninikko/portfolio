@@ -1,0 +1,500 @@
+/* ------------------------------------------------------ */
+/* ---------------------- Basic Setup-------------------- */
+/* ------------------------------------------------------ */
+
+* { /* background image body properties for all background images */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    /* font-size: 62.5%;*/ /* set the base font size for rem calculations */
+    scroll-behavior: smooth; /* for smooth scrolling when clicking on navigation links */
+}
+
+@media (max-width: 1150px) { /* for small screen devices, set base font size from its original value */
+    html {
+        font-size: 80%;
+    }
+}
+
+:root { /* class for variables*/
+    /*used colors*/
+    --purple: #9d4edd;
+    --lemonchiffon: #fffacd;
+    --darkslategrey: #2f4f4f;
+    --background-default: #ccdada;
+    --background-additional: #cecfc9;
+    
+    /*right top navigation buttons height*/
+    --nav-height: 10rem;
+
+    /*font sizes*/
+    --fs-h1: 3rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 2rem;
+    --fs-body: 1.5rem;
+
+    /*scale for universal spacing*/
+    --gutter-xxx-small: 1rem;
+    --gutter-xx-small: 2rem;
+    --gutter-x-small: 3rem;
+    --gutter-small: 4rem;
+    --gutter-medium: 6rem;
+    --gutter-large: 9rem;
+    --gutter-x-large: 11rem;
+    --gutter-huge: 20rem;
+
+}
+
+body { /* main text style */
+    color: var(--darkslategrey);
+    font-size: var(--fs-body);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.5; /* for better readability, indent btw lines of text */
+    background-color: var(--background-default); /* if there is no background image */
+    overflow-x: hidden; /* to prevent horizontal scroll on small screens */
+}
+
+img { /* style for all images */
+    max-width: 100%;
+    object-fit: contain; /* rule for preserved aspect ratio */
+}
+
+a { /* text color for all button links */
+    color: var(--lemonchiffon);
+    text-decoration: none;
+}
+
+.button { /* style for clickable buttons */
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    background-color: var(--darkslategrey);
+    color: var(--lemonchiffon);
+    border: 1px solid var(--purple);
+    border-radius: 5px;
+    font-size: 1.375rem;
+    /*margin-top: 20px;
+    margin-right: 20px;*/
+}
+
+.button-text { /* style for text links */
+    display: inline-block;
+    padding: 0.8rem 0.5rem;
+    border-bottom: 1px solid var(--purple);
+}
+
+.button,
+.button-text { /* hover effects for buttons and links-buttons */
+    position: relative; /* for hover effect */
+    z-index: 1; /* to ensure the button is above the hover effect */
+    overflow-x: hidden; /* to hide the hover effect outside the button */
+}
+
+.button::after,
+.button-text::after { /* hover effects for buttons and links-buttons */
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-additional); /* color before for nice effect when hovering */
+    transition: width 0.3s ease; /* smooth transition */
+    transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9); /* smooth transition for hover effect */
+    z-index: -1; /* to ensure the hover effect is behind the button */
+}
+
+.button:hover::after,
+.button-text:hover::after { /* hover effect properties when hovered */
+    right: 0;
+    background-color: var(--purple);
+}
+
+img { /* style for all images */
+    object-fit: contain; /* rule for preserved aspect ratio */
+}
+
+section { /* style for all sections */
+    padding: var(--gutter-x-large) 0;
+    border-bottom: 1px solid var(--lemonchiffon);
+    border-top: 1px solid var(--lemonchiffon);
+}
+
+.row{ /* container for horizontal layouts */
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1530px) { /* fitting content for small screen devices by adjusting left indent */
+    .row {
+        padding: 0 var(--gutter-large);
+    }
+}
+
+@media (max-width: 850px) { /* for small screen devices, change indent for rows */
+    .row {
+        padding: 0 var(--gutter-medium);
+    }
+}
+
+@media (max-width: 700px) { /* for small screen devices, change indent for rows */
+    .row {
+        padding: 0 var(--gutter-xxx-small);
+    }
+}   
+
+h1, h2, h3 { /* style for all headers */
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h2::after { /* line under h2 */
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--purple);
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    margin-top: 20px;
+}
+
+@media (max-width: 1000px) { /* for small screen devices, change font size for h1 */
+    h1 {
+        font-size: var(--fs-h2);
+    }
+    h2 {
+        font-size: var(--fs-h3);
+    }
+    h3 {
+        font-size: var(--fs-body);
+    }
+}
+
+ul { /* style for all lists */
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+/* ------------------------------------------------------ */
+/* ---------------------- Header------------------------- */
+/* ------------------------------------------------------ */
+
+header { /* background image */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (max-width: 680px) { /* for small screen devices, change position */
+    header {
+        text-align: center;
+    }
+}
+
+header .row {
+    width: 100%;
+}
+
+nav { /* top navigation buttons properties*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3.75rem;
+    height: var(--nav-height);
+    margin-left: 100px; /* move left*/
+    margin-top: 20px; /* move down*/
+}
+
+@media (max-width: 680px) { /* for small screen devices, change position */
+    nav {
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+nav a { /* right top navigation buttons text properties */
+    font-size: 1.6rem;
+    position: relative; /* for hover effect */
+    overflow-x: hidden; /* to hide the hover effect outside the button */
+    padding-bottom: 1rem; /* to create space for the hover effect */
+    transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9); /* smooth transition for hover effect */
+}
+
+nav a::after { /* right top navigation buttons hover effect properties */
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    width: 100%;
+    height: 1rem;
+    display: block;
+    background: var(--background-default);
+    transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9); /* smooth transition for hover effect */
+}
+
+nav a:hover { /* right top navigation buttons properties when hovered */
+    color: var(--purple);
+}
+
+nav a:hover::after { /* right top navigation buttons hover effect properties when hovered */
+    right: 0;
+    height: 2px;
+    background-color: var(--purple);
+}
+
+.header-text-container { /* big container with text */
+    display: flex;
+    align-items: normal;
+    margin-top: 200px;
+    height: calc(100% - 5.625rem);
+}
+
+.header-text-container p { /* text in the big container under h1 */
+    font-size: 1.9rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ----------------------------------------------------- */
+/* -----------------------About------------------------- */
+/* ----------------------------------------------------- */
+
+/* background image for about section */
+/*section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('images/about.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}*/
+
+.about-box{ /* main container for whole MyWork section */
+    display: flex;
+    align-items: center;
+    gap: var(--gutter-x-large);
+    margin-top: var(--gutter-xxx-small);
+}
+
+@media (max-width: 1300px) { /* for small screen devices, stack text and image vertically */
+    .about-box {
+        gap: var(--gutter-x-small);
+        flex-direction: column;
+        align-items: initial;
+    }
+}
+
+@media (max-width: 1806px) { /* for small screen devices, stack text and image vertically */
+    .about-box-image {
+        max-width: 700px;
+    }
+}
+
+.about-box:not(:last-child) { /* spacing between boxes for different parts About, Skills, Expertise, Contact */
+    margin-bottom: var(--gutter-huge);
+}
+
+@media (max-width: 900px) { /* for small screen devices, gap btw several boxes if there are any */
+    .about-box:not(:last-child) {
+        margin-bottom: var(--gutter-large);
+    }
+}
+
+.about-box-text > * { /* container for text on the left side */ /* with * it is for all children*/
+    margin-top: var(--gutter-x-small);
+}
+
+.about-box-image { /* container for image on the right side*/
+    max-width: 726px;
+}
+
+.about-box-image img { /* image properties for the image on the right side */
+    max-width: 100%;
+}
+
+.about-box-links { /* for rendering links in the lower container */
+    display: flex;
+    align-items: center;
+    gap: var(--gutter-xx-small);
+}
+
+.gh-icon-link:hover,
+.gh-icon-link:focus { /* properties for GitHub icon when hovered or focused */
+    transform: scale(1.2);
+}
+
+.gh-icon-link {
+    transition: all 0.3s ease; /* smooth transition for hover effect */
+}
+
+.gh-icon-link img { /* GitHub icon properties */
+    height: 2.8rem;
+}
+
+/* ----------------------------------------------------- */
+/* ---------------------CLients------------------------- */
+/* ----------------------------------------------------- */
+
+section.clients-section { /* background color for Clients section */
+    background-color: white;
+}
+
+.clients-images { /* container for clients section */
+    display: flex;
+    justify-content: space-between;
+    padding: var(--gutter-x-small) 0;
+    overflow-x: auto; /* to enable horizontal scrolling on small screens */
+}
+
+.clients-images img { /* container for clients section */
+    height: 100px;
+    filter: opacity(80%);
+    justify-content: center;
+}
+
+@media (max-width: 1150px) { /* for small screen devices, stack images vertically */
+    .clients-images img {
+        margin-right: var(--gutter-small);
+    }
+}
+
+@media (max-width: 954px) { /* for small screen devices, change image height */
+    .clients-images img {
+        height: 60px;
+        margin-right: var(--gutter-xxx-small);
+    }
+}
+
+/* ----------------------------------------------------- */
+/* ---------------------Contact------------------------- */
+/* ----------------------------------------------------- */
+
+section.contact-section { /* background color for Contact section */
+    background-color: var(--background-additional);
+}
+
+.contact { /* container for Contact section, how elements are arranged */
+    display: flex; /* for horizontal layout */
+    align-items: center; /* for vertical alignment of text and image */
+    gap: var(--gutter-large);  /* space between text and image */
+    margin-top: var(--gutter-xx-small); /* space above the Contact section */
+}
+
+.contact-text p { /* for text on the right side of Contact section */
+    margin-bottom: var(--gutter-xx-small);
+}
+
+.contact-image { /* container for image on the left side of Contact section */
+    flex: 0 0 550px;
+}
+
+@media (max-width: 1300px) { /* for small screen devices, stack text and image vertically */
+    .contact {
+        gap: var(--gutter-xxx-small);
+        flex-direction: column;
+        align-items: initial;
+    }
+}
+
+@media (max-width: 700px) { /* for small screen devices, stack text and image vertically */
+    .contact-image {
+        flex: 0 0 400px;
+    }
+}
+
+/* ----------------------------------------------------- */
+/* --------------Example with text only----------------- */
+/* ----------------------------------------------------- */
+
+.example-text-only { /* container for Example with text only */
+    max-width: 950px;
+}
+
+.example-text-only p { /* text properties for Example with text only */
+    margin: var(--gutter-x-small) 0 var(--gutter-x-small); /* space top-left/right-bottom*/
+}
+
+/* ----------------------------------------------------- */
+/* -----------------------Footer------------------------ */
+/* ----------------------------------------------------- */
+
+footer { /* background color for footer */
+    background-color: var(--darkslategrey);
+    color: var(--lemonchiffon);
+    text-align: center;
+    padding: var(--gutter-x-small) 0;
+}
+
+.footer-social { /* container for social media links in the footer */
+    margin-bottom: var(--gutter-xxx-small);
+}
+
+.footer-social a:not(:last-child) { /* properties for links in footer-social div */
+    margin-right: var(--gutter-xxx-small);
+}
+
+.footer-social img { /* properties for all images in footer-social div */
+    height: 60px;
+    filter: opacity(80%);
+}
+
+@media (max-width: 650px) { /* for small screen devices, set base font size from its original value */
+    .footer {
+        font-size: 40%;
+    }
+}
+
+/* ----------------------------------------------------- */
+/* -----------------Back to Top Button------------------ */
+/* ----------------------------------------------------- */
+
+.back-to-top { /* container for Back to Top button */
+    position: fixed;
+    bottom: var(--gutter-small);
+    right: var(--gutter-small);
+    /* if the background of original icon is transparent */
+    /*height: 55px;
+    width: 55px;
+    background: var(--darkslategrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;*/
+    z-index: 1000; /* to ensure the button is above other content */
+    visibility: hidden; /* hide the button by default */
+    opacity: 0;
+    transform: scale(0); /* for smooth transition when showing the button */
+    transition: all 0.2s; /* smooth transition for showing/hiding the button */
+}
+
+.back-to-top.shown { /* class to show the button when needed */
+    visibility: visible;
+    transform: none;
+    opacity: 1;
+}
+
+.back-to-top img { /* properties for Back to Top button */
+    height: 55px;
+}
