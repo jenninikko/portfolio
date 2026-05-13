@@ -1,13 +1,16 @@
 # Evgeniia Nikolaenko — Technical Writer 💌
 
-Software Documentation | Installation Guides | API Documentation | Style Guides    
+Software Documentation | Installation Guides | API Documentation | Style Guides  
+
+*A technical communications specialist with years of experience from content creation to comprehensive content management and concept planning.*
+
 [![Portfolio](https://img.shields.io/badge/View_Portfolio-Online-blue?style=for-the-badge&logo=github)](https://jenninikko.github.io/portfolio/)
 
 ---
 ![He there!](images/hi-there.svg)
 <!--Generated with [Chromaflow](https://gradient-svg-generator.vercel.app/) by [ChanMeng666](https://github.com/ChanMeng666)-->
 
-Welcome to my portfolio! ✨ I am a technical writer based in Tampere, Finland.    
+Welcome to my portfolio! ✨ I am a technical writer based in Tampere, Finland.  
 **[Explore my documentation showcase &rarr;](https://jenninikko.github.io/portfolio/)**
 
 
@@ -21,38 +24,30 @@ Welcome to my portfolio! ✨ I am a technical writer based in Tampere, Finland.
 * I care about documentation and want to work on products that matter, where getting the documentation right has real consequences for teams.
 
 
-**Why I bring to your team specifically:**
+**What I bring to your team specifically:**
 * strong experience documenting software systems where correctness is critical
 * ability to produce documentation for developer audiences
 * familiarity with Docs-as-Code workflows (Git, Markdown/AsciiDoc, CI/CD, static site generators)
 * structured approach to terminology, style, and content consistency
 * ownership-driven mindset: I take responsibility for documentation quality, structure, and usability end-to-end
 
-
 ---
 
 ## Skills & Tools
 
-Technical Writing
-* User Manuals & Installation Guides
-* API Documentation
-* Troubleshooting Guides
-* Developer Documentation
-* Technical Editing & Formatting
-* Markdown & HTML
+**Documentation & Markup:** Markdown, AsciiDoc, HTML/XML, LaTeX, DITA  
 
-Tools
-* Git & GitHub
-* Visual Studio Code
-* Markdown Editors
-* MS Word & Google Docs
+**Static Site Generators:** mdBook, Astro, Jekyll, GitBook  
 
-Soft Skills
-* Clear Communication
-* Attention to Detail
-* Analytical Thinking
-* Fast Learning
-* Problem-Solving
+**Version Control & CI/CD:** Git, GitHub, GitLab, CI/CD pipelines  
+
+**Scripting & Programming:** Python (self-taught; used for testing scripts and workflow automation), JavaScript (university-level coursework), HTML/CSS, PL/SQL, Linux command line  
+
+**AI Documentation Tooling:** ChatGPT, Scribe for drafting, consistency checks, and release documentation  
+
+**Collaboration & Project Tools:** Confluence, Jira, YouTrack, Slack, draw.io, Figma, Snagit, Adobe Illustrator  
+
+**Technical Foundation:** ASD-STE100 (simplify complex concepts in English), Docs-as-Code methodology, open-source project contribution, UX/Information architecture
 
 ---
 
