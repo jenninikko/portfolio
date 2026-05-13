@@ -53,8 +53,8 @@ Welcome to my portfolio! ✨ I am a technical writer based in Tampere, Finland.
 
 ## Education
 
-**B.Tech. — Information and Computer Science** 2008–2014
-St. Petersburg State Polytechnic University, Russia
+**B.Tech. — Information and Computer Science** 2008–2014  
+St. Petersburg State Polytechnic University, Russia  
 **Thesis Title:** Research on Methods for Managing Active Thermal Protection Systems
 
 The curriculum included JavaScript programming and computer science fundamentals, providing a practical understanding of software development concepts needed for technical writing.
