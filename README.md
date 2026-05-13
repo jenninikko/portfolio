@@ -11,7 +11,7 @@ Welcome to my portfolio! ✨ I am a technical writer based in Tampere, Finland.
 **[Explore my documentation showcase &rarr;](https://jenninikko.github.io/portfolio/)**
 
 
-## 𝙰𝚋𝚘𝚞𝚝 𝙼𝚎
+## About Me
 
 * 13 years of experience managing documentation for complex, engineering-driven products and enterprise-grade, security-critical systems.
 * Specialization in developer-focused content, including API references, CLI workflows, and integration guides within Docs-as-Code environments (Git, CI/CD).
