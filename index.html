@@ -5,118 +5,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Evgeniia Nikolaenko | Technical Writer Portfolio
-    </title>
+    <title>Evgeniia Nikolaenko | Technical Writer Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
+    <!-- be visible to Google -->
+    <meta name="description" content="Technical Writer with 13 years of experience in developer docs, API references, and Docs-as-Code. Based in Tampere, Finland.">
+    <meta property="og:title" content="Evgeniia Nikolaenko | Technical Writer">
+    <meta property="og:description" content="Portfolio of technical writing work">
+    <meta property="og:image" content="images/evgeniianikko_photo.jpg">
+    <meta property="og:url" content="https://jenninikko.github.io/portfolio/">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header / Hero -->
     <header id="top">
         <div class="row">
             <nav>
-                <a href="#about" class="nav">About</a>
-                <a href="#work" class="nav">Work</a>
+                <a href="#portfolio" class="nav">Work</a>
                 <a href="#skills" class="nav">Skills</a>
                 <a href="#contact" class="nav">Contact</a>
             </nav>
         </div>
         <div class="row header-text-container">
             <div>
-                <h1>Technical Writer & Documentation Specialist</h1>
-                <p>From chaos to structure. <br>13 years of experience helping teams create clear, <br>concise documentation that users love.</p>
-                <a href="#work" class="button">View My Work</a>
+                <h1>Evgeniia Nikolaenko | Technical Writer</h1>
+                <p><i>From <span style="color:#cf021e;">chaos</span> to <span style="color:#3b226b">STRUCTURE</span>.</i> 13 years working with teams to transform
+                    <br>complex technical information into documentation
+                    <br>that is practical, consistent, and easy to use.
+                </p>
+                <p>
+                    Are you looking to improve developer experience, documentation quality,
+                    <br>or internal knowledge sharing?
+                    <br>Feel free to check my portfolio or get in touch.
+                </p>
+                <a href="#portfolio" class="button">See My Work</a>
                 <a href="#contact" class="button">Get In Touch</a>
             </div>
         </div>
         <script src="index.js" defer></script>
-    </header> 
-    
+    </header>
 
-     <!-- About -->
-    <section id="about">
+
+    <!-- Portfolio -->
+    <section id="portfolio">
         <div class="row">
-            <h2>About</h2>
+            <h2>Portfolio</h2>
+            <p class="section-intro">A few examples of the kind of documentation I have worked on.</p>
+
+            <!-- Ghaf / Unikie / Steniant -->
+            <div class="portfolio-item">
+                <div class="item-header">
+                    <div class="portfolio-logo-group">
+                        <img src="images/Unikie_logo.png" alt="Unikie logo" class="portfolio-logo">
+                        <img src="images/Steniant_logo.jpg" alt="Steniant logo" class="portfolio-logo">
+                    </div>
+                    <span class="item-label">DEVELOPER DOCS</span>
+                    <h3>Security-focused open-source software</h3>
+                </div>
+                <div class="item-content">
+                    <p>Documentation for open-source secure operating systems Ghaf and Spectrum.  <br>
+                        I designed and implemented documentation from scratch.</p>
+
+                    <h4>Ghaf Documentation: a framework description, developer's instructions, troubleshooting, and showcases</h4>
+                    <ul>
+                        <li><a href="https://ghaf.tii.ae/ghaf/overview/" class="button-text" target="_blank">Ghaf Developer Reference &nbsp;&rarr;</a>,
+                        <a href="https://ghaf.tii.ae/ghaf/releases/ghaf-24124/" class="button-text" target="_blank">Ghaf Release Notes &nbsp;&rarr;</a></li>
+                    </ul>
+
+                    <h4>Ghaf Documentation: guidelines for GitHub contributions</h4>
+                    <ul>
+                        <li><a href="https://github.com/tiiuae/ghaf/blob/main/CONTRIBUTING.md" class="button-text" target="_blank">Ghaf Contributing &nbsp;&rarr;</a>,
+                        <a href="https://github.com/tiiuae/ghaf/blob/main/docs/style_guide.md" class="button-text" target="_blank">Ghaf Style Guide &nbsp;&rarr;</a></li>
+                    </ul>
+
+                    <h4>Spectrum Documentation: about OS, build and run, user guide, development reference, and contributing</h4>
+                    <ul>
+                        <li><a href="https://spectrum-os.org/doc/" class="button-text" target="_blank">Spectrum Documentation &nbsp;&rarr;</a></li>
+                    </ul>
+
+                    <div class="tags">
+                        <span>Markdown</span>
+                        <span>Git</span>
+                        <span>Docs-as-Code</span>
+                        <span>mdBook</span>
+                        <span>Open Source</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Veeam -->
+            <div class="portfolio-item">
+                <div class="item-header">
+                    <img src="images/Veeam_logo_2024.png" alt="Veeam Software logo" class="portfolio-logo">
+                    <span class="item-label">USER GUIDES &amp; API REFERENCE</span>
+                    <h3>Enterprise data-protection software</h3>
+                </div>
+                <div class="item-content">
+                    <p>Documentation for backup and recovery solutions, including installation guides, user manuals, feature descriptions, and API reference materials.</p>
+
+                    <h4>Feature Description, User Guides</h4>
+                    <ul>
+                        <li><a href="https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=110" class="button-text" target="_blank">Hardened Repository &nbsp;&rarr;</a>, 
+                            <a href="https://helpcenter.veeam.com/docs/backup/vsphere/gateway_server.html?ver=110" class="button-text" target="_blank">Gateway Server &nbsp;&rarr;</a>
+                        </li>
+                    </ul>
+
+                    <h4>API Reference</h4>
+                    <ul>
+                        <li><a href="https://helpcenter.veeam.com/archive/backup/110/vbr_rest/overview.html" class="button-text" target="_blank">VBR 11 REST API &nbsp;&rarr;</a>,
+                            <a href="https://helpcenter.veeam.com/references/vbr/13/rest/1.3-rev1/tag/Credentials" class="button-text" target="_blank">VBR 13 REST API &nbsp;&rarr;</a>
+                        </li>
+                    </ul>
+
+                    <div class="tags">
+                        <span>Help & Manual</span>
+                        <span>Adobe Illustrator</span>
+                        <span>Confluence</span>
+                        <span>Release Notes</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Others / Article -->
+            <div class="portfolio-item">
+                <div class="item-header">
+                    <span class="item-label">OTHERS</span>
+                    <h3>Articles &amp; Writing</h3>
+                </div>
+                <div class="item-content">
+                    <p>Technical articles and writing samples published on Medium:</p>
+                    <ul>
+                        <li><a href="https://evgeniianikolaenko.medium.com/googling-as-a-skill-aa5ea98a1976" class="button-text" target="_blank">Googling as a skill &nbsp;&rarr;</a></li>
+                    </ul>
+                    <div class="tags">
+                        <span>Technical Writing</span>
+                        <span>Medium</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="skills">
+        <div class="row">
+            <h2>What I Bring</h2>
             <div class="about-box">
                 <div class="about-box-text">
-                    <h3>Who I am professionally</h3>
-                    <ul>
-                        <li>Experienced Technical Writer</li>
-                        <li>Team Manager</li>
-                        <li>Customer-oriented communicator and learning specialist</li>
-                    </ul>
+                    <p>With a background in software and engineering environments, I focus on improving documentation quality, usability, and long-term maintainability.</p>
+
+                    <div class="what-i-bring">
+                        <h3></h3>
+                        <div class="bring-grid">
+
+                            <div class="bring-item">
+                                <span class="bring-icon">&#129517;</span>
+                                <div>
+                                    <strong>User-first approach</strong>
+                                    <p>Understanding user goals, pain points, and context shapes every documentation decision I make.</p>
+                                </div>
+                            </div>
+
+                            <div class="bring-item">
+                                <span class="bring-icon">&#129513;</span>
+                                <div>
+                                    <strong>Product thinking</strong>
+                                    <p>Treating docs as a product. I ask why a feature needs documentation, not just what to write.</p>
+                                </div>
+                            </div>
+
+                            <div class="bring-item">
+                                <span class="bring-icon">&#128196;</span>
+                                <div>
+                                    <strong>Clear and simple writing</strong>
+                                    <p>I keep documentation organized, maintainable for others, and reusable across projects.
+                                        I follow ASD-STE100 principles — short sentences, consistent terminology, no unnecessary complexity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bring-item">
+                                <span class="bring-icon">&#127959;</span>
+                                <div>
+                                    <strong>Information architecture</strong>
+                                    <p>Before writing a single page, I map out how content connects, what users need at each step, and how the structure will hold up as the product grows.
+                                        I design documentation structures that scale, from single guides to full knowledge bases, with the end user's journey in mind.</p>
+                                </div>
+                            </div>
+                            <div class="bring-item">
+                                <span class="bring-icon">&#128269;</span>
+                                <div>
+                                    <strong>QA mindset</strong>
+                                    <p>I test what I document. If something does not work as described, I flag it before it reaches the user.</p>
+                                </div>
+                            </div>
+                            <div class="bring-item">
+                                <span class="bring-icon">&#128101;</span>
+                                <div>
+                                    <strong>Working with developers</strong>
+                                    <p>I sit in on standups, read code, and ask questions. Good docs come from understanding the product, not just the spec.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="about-box-links">
-                        <a href="" class="button-text">Visit Site &nbsp; &rarr;</a>
-                        <a href="" class="gh-icon-link">
+                        <a href="https://docs.google.com/document/d/1gYy56aqKyT74RmI7Qm6nvhwY4H3TAPnxQkqMWplELJg/edit?usp=sharing" class="button" target="_blank">Download My Resume</a>
+                        <a href="https://github.com/jenninikko" class="gh-icon-link" target="_blank" aria-label="GitHub profile">
                             <img src="images/github-logo.svg" alt="My GitHub profile"/>
                         </a>
                     </div>
                 </div>
-                <div class="about-box-image">
-                    <img src="images/portfolio_template.png" alt="Portfolio Template">
-                </div>
             </div>
         </div>
-     </section>
+    </section>
 
-     <!-- Clients -->
-     <section id="clients" class="clients-section">
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
         <div class="row">
-            <h2>Clients</h2>
-            <div class="clients-images">
-                <img src="images/Steniant_logo.jpg" alt="Steniant Oy logo">
-                <img src="images/Unikie_logo.png" alt="Unikie OY logo">
-                <img src="images/Veeam_logo_2024.png" alt="Veeam Software logo">
+            <h2>Contact</h2>
+            <p class="contact-headline">Let's build something together!</p>
+
+            <div class="contact-whatIdo">
+                <p>What I do:</p>
+                <ul>
+                    <li>Technical Writing & Developer Documentation: API references, integration guides, setup and configuration guides, user manuals</li>
+                    <li>Terminology & User Guidance: controlled vocabulary, style guides, and consistent terminology across distributed product teams</li>
+                    <li>Knowledge sharing and Internal communication</li>
+                </ul>
             </div>
-        </div>
-     </section>
 
-<!-- Work/Portfolio -->
-<!-- Skills/Expertise -->
-
-    <!-- Contact -->  
-     <section id="contact" class="contact-section">
-        <div class="row">
-            <h2>Let's work together</h2>
             <div class="contact">
                 <div class="contact-image">
                     <img src="images/evgeniianikko_photo.jpg" alt="Say hello to Evgeniia!">
-                </div>                
+                </div>
                 <div class="contact-text">
-                    <p>Have a documentation project in mind? <br><br> Do you want to discuss how I can help your team,
-                        <br>or just want to say hi, feel free to reach out :)</p>
-                    <a href="mailto:evgeniianikko@protonmail.com" class="button">evgeniianikko@protonmail.com &nearr;</a>
+                    <p>Ready to structure your technical world? I will help you create clear and effective documentation that meets your team's needs.</p>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon">&#128205;</span>
+                            Location: Tampere, Finland / available for remote work across Europe
+                        </li>
+                        <li>
+                            <span class="contact-icon">&#9993;</span>
+                            Email: <a href="mailto:evgeniianikko@protonmail.com" class="button-text">evgeniianikko@protonmail.com &nearr;</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon">&#128188;</span>
+                            LinkedIn: <a href="https://www.linkedin.com/in/evgeniia-nikolaenko/" class="button-text" target="_blank">evgeniia-nikolaenko &nearr;</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
-    <!-- Example with text only -->  
-     <section>
-        <div class="row">
-            <h2>Example with text only</h2>
-            <div class="example-text-only">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. 
-                    Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. 
-                    Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta 
-                    lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor 
-                    sit amet, consectetur adipiscing elit.</p>
-                <a href="" class="button">Download My Resume</a>
-            </div>
-        </div>
-     </section>
 
-     <!-- Footer -->  
+    <!-- Footer -->
     <footer>
         <div class="row">
             <div class="footer-social">
-                <a href="https://www.linkedin.com/in/evgeniia-nikolaenko/"><img src="images/linkedin-logo.svg" alt="LinkedIn Profile"></a>
-                <a href="https://github.com/jenninikko"><img src="images/github-logo.svg" alt="GitHub Profile"></a>
+                <a href="https://www.linkedin.com/in/evgeniia-nikolaenko/" target="_blank"><img src="images/linkedin-logo.svg" alt="LinkedIn Profile"></a>
+                <a href="https://github.com/jenninikko" target="_blank"><img src="images/github-logo.svg" alt="GitHub Profile"></a>
             </div>
             <p>&copy; 2026 Evgeniia Nikolaenko. All rights reserved.</p>
         </div>
-    </footer>  
+    </footer>
 
     <a aria-label="Back to Top" class="back-to-top" href="#top"><img src="images/arrow-up.svg" alt="Arrow Up"></a>
 
